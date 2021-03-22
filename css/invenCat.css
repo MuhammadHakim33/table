@@ -1,0 +1,70 @@
+.popup {
+  width: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9 !important;
+}
+
+.popup > * {
+  /* height: 60px; */
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.popup .input {
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.popup .input .wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+}
+
+.popup form > * {
+  height: 50px;
+}
+
+.popup .input input,
+.popup .input select {
+  width: 60%;
+}
+
+.btn-grup {
+  justify-content: flex-end;
+}
+
+.btn-grup .save {
+  background-color: #00b152;
+  color: white;
+  margin-right: 12px;
+}
+
+.btn-grup .cancel {
+  background-color: #242424;
+  color: white;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.off {
+  display: none;
+}
